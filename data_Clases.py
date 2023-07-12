@@ -7,7 +7,7 @@ from typing import ClassVar
 #eq=para apuntar al mismo espacio de la memoria
 #Frozen para que sean inmutable, si ponemos tru ya no podemos modificar
 @dataclass
-class Domicilio(eq=True, frozen=True):
+class Domicilio(eq=True, frozen=True):  
     dirección: str
     numero: int = 0
 
@@ -31,5 +31,5 @@ print(f'{persona!r}')# método repr
 print(persona2)
 persona3 = Persona('David','Zhunio',Domicilio('X',50))
 print(persona3)
-coleccion = {persona3,persona3}
+colección = {persona3,persona3}
 
